@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpine.js Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </head>
-<body>
-    <!-- Your Alpine.js components go here -->
-
-    <div x-data="{ open: false }">
-        <button @click="open = !open">Toggle</button>
-        <div x-show="open">
-            <p>Hello! My name is Timothy Choi. I am a Frontend-focused Software Developer, with a strong belief in the Agile Methodology. I graduate from the University of California, Santa Barbara in June of 2025 </p>
+<body class="bg-gray-100 p-6">
+    <div x-data="{ open: false }" class="max-w-md mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <button @click="open = !open" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 focus:outline-none">
+            Click!
+        </button>
+        <div x-show="open" class="mt-4">
+            <p class="text-gray-700">
+                Hello! My name is Timothy Choi. I am a Frontend-focused Software Developer, with a strong belief in the Agile Methodology. 
+                I graduate from the University of California, Santa Barbara in June of 2025.
+            </p>
         </div>
     </div>
-
 </body>
 </html>
