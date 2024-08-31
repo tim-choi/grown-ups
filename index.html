@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpine.js Project</title>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+<body>
+    <!-- Your Alpine.js components go here -->
+
+    <div x-data="{ open: false }">
+        <button @click="open = !open">Toggle</button>
+        <div x-show="open">
+            <p>Hello, Alpine.js!</p>
+        </div>
+    </div>
+
+</body>
+</html>
